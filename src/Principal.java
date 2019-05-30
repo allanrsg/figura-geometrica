@@ -6,16 +6,16 @@ public class Principal {
         Scanner ler = new Scanner(System.in);
 
         System.out.println("Lado superior: ");
-        float lado1 = ler.nextFloat();
+        int lado1 = ler.nextInt();
 
         System.out.println("Lado direito: ");
-        float lado2 = ler.nextFloat();
+        int lado2 = ler.nextInt();
 
         System.out.println("Lado inferior: ");
-        float lado3 = ler.nextFloat();
+        int lado3 = ler.nextInt();
 
         System.out.println("Lado esquerdo: ");
-        float lado4 = ler.nextFloat();
+        int lado4 = ler.nextInt();
 
     }
 }

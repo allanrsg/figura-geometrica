@@ -48,6 +48,6 @@ public abstract class Quadrilatero implements FiguraGeometrica {
         return lado4;
     }
 
-    public abstract void calculaPerimetro();
-    public abstract void calculaArea();
+    public abstract double calculaPerimetro();
+    public abstract double calculaArea();
 }

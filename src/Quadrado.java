@@ -4,12 +4,13 @@ public class Quadrado extends Quadrilatero{
         super(lado1);
     }
 
-    public abstract void calculaPerimetro(){
-
-    }
-    public abstract void calculaArea(){
-
+    @Override
+    public double calculaPerimetro(){
+        return lado1*lado1;
     }
 
-
+    @Override
+    public double calculaArea(){
+        return 4*lado1;
+    }
 }

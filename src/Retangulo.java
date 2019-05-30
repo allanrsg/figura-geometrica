@@ -4,11 +4,14 @@ public class Retangulo extends Quadrilatero{
         super(lado1, lado2);
     }
 
-    public abstract void calculaPerimetro(){
-
+    @Override
+    public double calculaPerimetro(){
+        return  2*lado1+2*lado2;
     }
-    public abstract void calculaArea(){
 
+    @Override
+    public double calculaArea(){
+        return lado1*lado2;
     }
 
 

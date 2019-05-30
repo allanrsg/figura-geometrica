@@ -1,7 +1,7 @@
 public interface FiguraGeometrica {
 
-    public abstract void calculaPerimetro();
-    public abstract void calculaArea();
+    public abstract double calculaPerimetro();
+    public abstract double calculaArea();
 
 
 }
