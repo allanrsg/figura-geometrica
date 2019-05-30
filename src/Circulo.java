@@ -1,4 +1,4 @@
-public abstract class Circulo implements FiguraGeometrica{
+public class Circulo implements FiguraGeometrica{
     private float raio;
 
     public void setRaio (float raio ){

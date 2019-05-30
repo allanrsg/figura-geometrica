@@ -3,20 +3,24 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] arg) {
 
-        Scanner ler = new Scanner(System.in);
+        Quadrado quadrado = new Quadrado (5);
+        Retangulo retangulo = new Retangulo (5,10);
+        Circulo circulo = new Circulo(5);
 
-        System.out.println("Lado superior: ");
-        int lado1 = ler.nextInt();
+        System.out.println("Quadrado: \nlados: " + quadrado.getLado1() +
+                " - perimetro: " + quadrado.calculaPerimetro() +
+                " - área: " + quadrado.calculaArea() + "\n");
 
-        System.out.println("Lado direito: ");
-        int lado2 = ler.nextInt();
+        System.out.println("Retangulo: \nbase: " + retangulo.getLado1() + " - altura: " + retangulo.getLado2() +
+                " - perimetro: " + retangulo.calculaPerimetro() +
+                " - área: " + retangulo.calculaArea() + "\n");
 
-        System.out.println("Lado inferior: ");
-        int lado3 = ler.nextInt();
+        System.out.println("Circulo: \nraio: " + circulo.getRaio() +
+                " - perimetro " + circulo.calculaPerimetro() +
+                " - area " + circulo.calculaArea());
 
-        System.out.println("Lado esquerdo: ");
-        int lado4 = ler.nextInt();
 
     }
 }
+
 

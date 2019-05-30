@@ -6,11 +6,11 @@ public class Quadrado extends Quadrilatero{
 
     @Override
     public double calculaPerimetro(){
-        return lado1*lado1;
+        return 4*lado1;
     }
 
     @Override
     public double calculaArea(){
-        return 4*lado1;
+        return lado1*lado1;
     }
 }
