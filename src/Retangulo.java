@@ -1,6 +1,6 @@
 public class Retangulo extends Quadrilatero{
 
-    public Retangulo(int lado1, int lado2) {
+    public Retangulo(float lado1, float lado2) {
         super(lado1, lado2);
     }
 

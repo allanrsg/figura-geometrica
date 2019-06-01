@@ -6,10 +6,6 @@ public class Principal {
 
     public static void main(String[] arg) {
 
-        Quadrado quadrado = new Quadrado(5);
-        Retangulo retangulo = new Retangulo(5, 10);
-        Circulo circulo = new Circulo();
-
         char opcao = '0';
         do {
             System.out.println("| - - - - - - - - - - - - - - - - - -   |");
@@ -24,19 +20,13 @@ public class Principal {
             opcao = ler.next().charAt(0);
             switch (opcao) {
                 case '1':
-                    System.out.println("Quadrado: \nlados: " + quadrado.getLado1() +
-                            " - perimetro: " + quadrado.calculaPerimetro() +
-                            " - área: " + quadrado.calculaArea() + "\n");
+                    Principal.calculaQuadrado();
                     break;
                 case '2':
-                    System.out.println("Retangulo: \nbase: " + retangulo.getLado1() + " - altura: " + retangulo.getLado2() +
-                            " - perimetro: " + retangulo.calculaPerimetro() +
-                            " - área: " + retangulo.calculaArea() + "\n");
+                    Principal.calculaRetangulo();
                     break;
                 case '3':
-                    System.out.println("Circulo: \nraio: " + circulo.getRaio() +
-                            " - perimetro " + circulo.calculaPerimetro() +
-                            " - area " + circulo.calculaArea());
+                    Principal.calculaCirculo();
                     break;
                 case '4':
                     System.out.println("Você saiu!");
@@ -52,6 +42,38 @@ public class Principal {
             }
         } while (opcao != '4');
     }
+
+    private static void calculaQuadrado(){
+
+        System.out.println("Digite o tamanho dos lados do quadrado: ");
+        float a = ler.nextFloat();
+        Quadrado quadrado = new Quadrado(a);
+        System.out.println("Quadrado: \nlados: " + quadrado.getLado1() +
+                " - perimetro: " + quadrado.calculaPerimetro() +
+                " - área: " + quadrado.calculaArea() + "\n");
+    }
+
+    private static void calculaRetangulo(){
+
+        System.out.println("Digite o tamanho da base do retangulo: ");
+        float b = ler.nextFloat();
+        System.out.println("Digite o tamanho da altura do retangulo: ");
+        float h = ler.nextFloat();
+        Retangulo retangulo = new Retangulo(b, h);
+        System.out.println("Retangulo: \nbase: " + retangulo.getLado1() + " - altura: " + retangulo.getLado2() +
+                " - perimetro: " + retangulo.calculaPerimetro() +
+                " - área: " + retangulo.calculaArea() + "\n");
+    }
+
+    private static void calculaCirculo(){
+
+        System.out.println("Digite o tamanho do raio do circulo: ");
+        float raio = ler.nextFloat();
+        Circulo circulo = new Circulo(raio);
+
+        System.out.printf("Círculo: \nraio: %.2f - perimetro: %.2f - area: %.2f \n\n",circulo.getRaio(), circulo.calculaPerimetro(),circulo.calculaArea());
+    }
+
 }
 
 

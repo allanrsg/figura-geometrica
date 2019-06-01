@@ -1,5 +1,10 @@
 public class Circulo implements FiguraGeometrica{
+
     private float raio;
+
+    public Circulo(float raio ) {
+        this.raio = raio;
+    }
 
     public void setRaio (float raio ){
         this.raio = raio;
@@ -10,7 +15,7 @@ public class Circulo implements FiguraGeometrica{
 
     @Override
     public double calculaPerimetro() {
-        return (2 * Math.PI * raio);
+        return ((2 * Math.PI) * raio);
     }
 
     @Override

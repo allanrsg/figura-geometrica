@@ -1,6 +1,6 @@
 public class Quadrado extends Quadrilatero{
 
-    public Quadrado(int lado1) {
+    public Quadrado(float lado1) {
         super(lado1);
     }
 
